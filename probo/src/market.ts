@@ -1,10 +1,8 @@
-import { notDeepStrictEqual } from "assert";
 import express, { type Request, type Response }from  "express"
-import { userInfo } from "os";
 
 const router = express.Router()
-
 type OutcomeType = "YES" | "NO"
+
 
 interface Market {
     id: string;
@@ -161,6 +159,8 @@ router.post("/user/onramp", (req: Request, res: Response) => {
     }   
 })
 
+
+
 router.post("/user/trade", (req: Request, res: Response) => {
     try {
         const { userId, marketId, outcome, shares } = req.body as TradeRequest;
@@ -261,7 +261,9 @@ router.post("/user/claim", (req: Request, res: Response) => {
 
 })
 
+
 export default router
+
 
 
 

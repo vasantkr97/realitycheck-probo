@@ -1,0 +1,29 @@
+{
+  "name": "contest-1811",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run index.ts",
+    "start": "bun dist/index.js",
+    "build": "bun build index.ts --outdir dist"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/bun": "latest",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.1",
+    "cookie-parser": "^1.4.7",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.5",
+    "bcryptjs": "^3.0.3",
+    "express": "^5.1.0",
+    "zod": "^4.1.12"
+  }
+}
